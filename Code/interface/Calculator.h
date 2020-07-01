@@ -41,8 +41,6 @@ class Calculator {
             double number1_;
             double number2_;
             Operation op_;
-
-            double solveExpression();
         };
 
         //This is one way to declare a default constructor, but if not included at all, the compiler will create your class assuming this line
