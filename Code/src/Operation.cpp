@@ -17,6 +17,8 @@ namespace math {
             case kDivideChar:
                 return Operation::kDivide;
         }
+
+        return Operation::kNoOperation;
     }
 
     std::ostream& operator<<(std::ostream& os, const Operation& op) {

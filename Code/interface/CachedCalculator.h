@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <string> //We should always use string rather than C-style char[]
-#include <map>
+#include <unordered_map>
 
 // Our Files 
 #include "Operation.h"
@@ -33,7 +33,7 @@ class CachedCalculator {
         friend std::istream& operator>>(std::istream& is, CachedCalculator& calc);
 
     private:
-        std::map<Expression, double> cached_solutions_;
+        std::unordered_map<Expression, double, ExpressionHashFunction> cached_solutions_;
 
         std::vector<Expression> expressions_;
         std::vector<std::string> solutions_;

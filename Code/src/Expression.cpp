@@ -8,6 +8,10 @@
 
 namespace math {
     Expression::Expression(const std::string& input) {
+        parseString(input);
+    }
+
+    void Expression::parseString(const std::string& input) {
         size_t idx = 0;
 
         std::string num1, num2;
@@ -53,6 +57,10 @@ namespace math {
         }
     }
 
+    bool Expression::operator==(const Expression& rhs) {
+        return number1_ == rhs.number1_ && number2_ == rhs.number2_ && op_ == rhs.op_;
+    }
+
     std::ostream& operator<<(std::ostream& os, const Expression& exp) {
         if(exp.op_ == kNoOperation) {
             return os << exp.number1_;
@@ -69,20 +77,3 @@ namespace math {
         return is;
     }
 }
-/*
-Equation::Equation(const std::string & s) {
-    // TODO: split string
-    a = 10; 
-    b = 10; 
-    operator = '+'; 
-    calculateResult(); 
-}
-
-void Equation::calculateResult() {
-    result = 10; 
-}
-
-int Equation::getResult() {
-    return result; 
-}
-*/
