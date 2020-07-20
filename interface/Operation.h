@@ -6,24 +6,24 @@
 
 namespace math {
 
-    const char kAddChar = '+';
-    const char kSubtractChar = '-';
-    const char kMultiplyChar = '*';
-    const char kDivideChar = '/';
+  const char kAddChar = '+';
+  const char kSubtractChar = '-';
+  const char kMultiplyChar = '*';
+  const char kDivideChar = '/';
 
-    enum Operation {
-        kAdd,
-        kSubtract,
-        kMultiply,
-        kDivide,
-        kNoOperation
-    };
+  enum Operation {
+    kAdd,
+    kSubtract,
+    kMultiply,
+    kDivide,
+    kNoOperation
+  };
 
-    bool isOperationChar(char c);
+  bool isOperationChar(char c);
 
-    Operation charToOperation(char c);
+  Operation charToOperation(char c);
 
-    std::ostream& operator<<(std::ostream& os, const Operation& op);
+  std::ostream& operator<<(std::ostream& os, const Operation& op);
 } //namespace math
 
 #endif
