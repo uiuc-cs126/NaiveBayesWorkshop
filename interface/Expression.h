@@ -18,16 +18,15 @@ namespace math {
 //==================
 // Constants (The right way)
 //==================
-  const char kSpecialCharacterDelim = '/';
+const char kSpecialCharacterDelim = '/';
 
-  const std::string kPiStr = "pi";
-  const std::string kEStr = "e";
-  const double kPiVal = 3.14;
-  const double kEVal = 2.72;
+const std::string kPiStr = "pi";
+const std::string kEStr = "e";
+const double kPiVal = 3.14;
+const double kEVal = 2.72;
 
-
-  class Expression {
-    friend class ExpressionHasher;
+class Expression {
+  friend class ExpressionHasher;
 
   public:
     Expression() = default;
@@ -35,21 +34,21 @@ namespace math {
 
     double ComputeSolution() const;
 
-    // == Operator overload for hashing collisions 
+    // == Operator overload for hashing collisions
     bool operator==(const Expression& rhs);
 
-    // Input and Output stream operator overloads 
+    // Input and Output stream operator overloads
     friend std::ostream& operator<<(std::ostream& os, const Expression& exp);
     friend std::istream& operator>>(std::istream& is, Expression& exp);
 
   private:
     //==============
-    // Helping Functions 
+    // Helping Functions
     //==============
     void ParseRawInput(const std::string& input);
 
     //==============
-    // Data members 
+    // Data members
     //==============
     double number1_;
     double number2_;
@@ -59,13 +58,13 @@ namespace math {
 //==================
 // Hashing for Expression
 //==================
-  struct ExpressionHasher {
-    inline size_t operator()(const Expression& exp) const {
-      return ((std::hash<double>()(exp.number1_)
-               ^ (std::hash<double>()(exp.number2_) << 1)) >> 1)
-             ^ (std::hash<int>()(exp.op_) << 1);
-    }
-  };
+struct ExpressionHasher {
+  inline size_t operator()(const Expression& exp) const {
+    return ((std::hash<double>()(exp.number1_)
+      ^ (std::hash<double>()(exp.number2_) << 1)) >> 1)
+      ^ (std::hash<int>()(exp.op_) << 1);
+  }
+};
 
 } //namespace math
 

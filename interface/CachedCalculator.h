@@ -15,7 +15,7 @@
 
 namespace math {
 
-  class CachedCalculator {
+class CachedCalculator {
   public:
     // This is one way to declare a default constructor, but if not included at all, the compiler will create your class assuming this line
     // This is only really necessary when Calculator is given multiple constructors and you want a default constructor as well
@@ -38,6 +38,6 @@ namespace math {
     std::vector<Expression> expressions_;
     std::vector<std::string> solutions_;
   };
-} // namespace math
+  } // namespace math
 
 #endif
