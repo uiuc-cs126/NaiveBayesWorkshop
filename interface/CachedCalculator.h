@@ -5,14 +5,13 @@
 
 // Library Files 
 #include <iostream>
-#include <vector>
-#include <map>
 #include <string> //We should always use string rather than C-style char[]
 #include <unordered_map>
+#include <vector>
 
-// Our Files 
-#include "Operation.h"
+// Our Files
 #include "Expression.h"
+#include "Operation.h"
 
 namespace math {
 
@@ -34,7 +33,7 @@ class CachedCalculator {
         friend std::istream& operator>>(std::istream& is, CachedCalculator& calc);
 
     private:
-        std::map<Expression, double> cached_solutions_;
+        std::unordered_map<Expression, double, ExpressionHashFunction> cached_solutions_;
 
         std::vector<Expression> expressions_;
         std::vector<std::string> solutions_;

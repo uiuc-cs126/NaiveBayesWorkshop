@@ -59,13 +59,12 @@ private:
 //==================
 // Hashing for Expression
 //==================
-class ExpressionHashFunction {
-public:
-    inline size_t operator()(Expression& exp) {
-      return ((std::hash<double>()(exp.number1_)
-               ^ (std::hash<double>()(exp.number2_) << 1)) >> 1)
-             ^ (std::hash<int>()(exp.op_) << 1);
-    }
+struct ExpressionHashFunction {
+  size_t operator()(const Expression& exp) const {
+    return ((std::hash<double>()(exp.number1_)
+      ^ (std::hash<double>()(exp.number2_) << 1)) >> 1)
+      ^ (std::hash<int>()(exp.op_) << 1);
+  }
 };
 
 } //namespace math
