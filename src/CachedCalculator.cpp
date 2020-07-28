@@ -7,10 +7,10 @@ void math::CachedCalculator::SolveEquations() {
   //TODO: write the equation solving
 }
 
-std::ostream& operator<<(std::ostream& os, const math::CachedCalculator& calc) {
+std::ostream& operator<<(std::ostream& os, const math::CachedCalculator& calculator) {
   return os;
 }
 
-std::istream& operator>>(std::istream& is, math::CachedCalculator& calc) {
+std::istream& operator>>(std::istream& is, math::CachedCalculator& calculator) {
   return is;
 }
