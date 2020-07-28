@@ -38,8 +38,8 @@ class Expression {
     bool operator==(const Expression& rhs);
 
     // Input and Output stream operator overloads
-    friend std::ostream& operator<<(std::ostream& os, const Expression& exp);
-    friend std::istream& operator>>(std::istream& is, Expression& exp);
+    friend std::ostream& operator<<(std::ostream& os, const Expression& expression);
+    friend std::istream& operator>>(std::istream& is, Expression& expresson);
 
   private:
     //==============
@@ -52,7 +52,7 @@ class Expression {
     //==============
     double number1_;
     double number2_;
-    Operation op_;
+    Operation operator_;
   };
 
 //==================
@@ -62,7 +62,7 @@ struct ExpressionHasher {
   inline size_t operator()(const Expression& exp) const {
     return ((std::hash<double>()(exp.number1_)
       ^ (std::hash<double>()(exp.number2_) << 1)) >> 1)
-      ^ (std::hash<int>()(exp.op_) << 1);
+      ^ (std::hash<int>()(exp.operator_) << 1);
   }
 };
 

@@ -13,7 +13,7 @@ Expression::Expression(const std::string& input) {
 }
 
 double Expression::ComputeSolution() const {
-  switch (op_) {
+  switch (operator_) {
     case Operation::kAdd:
       return number1_ + number2_;
     case Operation::kSubtract:
@@ -31,21 +31,21 @@ double Expression::ComputeSolution() const {
 }
 
 bool Expression::operator==(const Expression& rhs) {
-  return number1_ == rhs.number1_ && number2_ == rhs.number2_ && op_ == rhs.op_;
+  return number1_ == rhs.number1_ && number2_ == rhs.number2_ && operator_ == rhs.operator_;
 }
 
-std::ostream& operator<<(std::ostream& os, const Expression& exp) {
-  if(exp.op_ == kNoOperation) {
-    return os << exp.number1_;
+std::ostream& operator<<(std::ostream& os, const Expression& expression) {
+  if(expression.operator_ == kNoOperation) {
+    return os << expression.number1_;
   }
-  return os << exp.number1_ << " " << exp.op_ << " " << exp.number2_;
+  return os << expression.number1_ << " " << expression.operator_ << " " << expression.number2_;
 }
 
-std::istream& operator>>(std::istream& is, Expression& exp) {
+std::istream& operator>>(std::istream& is, Expression& expression) {
   std::string expressionLine;
   std::getline(is, expressionLine);
 
-  exp = Expression(expressionLine);
+  expression = Expression(expressionLine);
 
   return is;
 }
@@ -53,29 +53,35 @@ std::istream& operator>>(std::istream& is, Expression& exp) {
 void Expression::ParseRawInput(const std::string& input) {
   size_t idx = 0;
 
-  std::string numStr1;
-  std::string numStr2;
+<<<<<<< HEAD
+=======
+  std::string raw_num_1 = "";
+  std::string raw_num_2 = "";
 
   while(idx < input.size() && !isOperationChar(input[idx])) {
-    numStr1 += input[idx];
+    raw_num_1 += input[idx];
+>>>>>>> 3130779d2a05a3356db5ed09ff65342c256c3283
     ++idx;
   }
 
   if(idx < input.size() - 1) { // Make sure that we have space for both the operation and a number afterwards
-    op_ = charToOperation(input[idx]);
+    operator_ = static_cast<Operation>(input[idx]);
     ++idx;
 
     while(idx < input.size()) {
-      numStr2 += input[idx];
+<<<<<<< HEAD
+=======
+      raw_num_2 += input[idx];
       ++idx;
     }
 
-    number1_ = std::stod(numStr1);
-    number2_ = std::stod(numStr2);
+    number1_ = std::stod(raw_num_1);
+    number2_ = std::stod(raw_num_2);
   }
   else {
-    op_ = Operation::kNoOperation;
-    number1_ = std::stod(numStr1);
+    operator_ = Operation::kNoOperation;
+    number1_ = std::stod(raw_num_1);
+>>>>>>> 3130779d2a05a3356db5ed09ff65342c256c3283
     number2_ = 0;
   }
 

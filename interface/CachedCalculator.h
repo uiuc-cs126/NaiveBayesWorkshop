@@ -29,8 +29,8 @@ class CachedCalculator {
     // Stream operator overloads
     // You can also declare these inside the class definitino as a "friend", meaning these functions
     // have access to private members of the Calculator class
-    friend std::ostream& operator<<(std::ostream& os, const CachedCalculator& calc);
-    friend std::istream& operator>>(std::istream& is, CachedCalculator& calc);
+    friend std::ostream& operator<<(std::ostream& os, const CachedCalculator& calculator);
+    friend std::istream& operator>>(std::istream& is, CachedCalculator& calculator);
 
   private:
     std::unordered_map<Expression, double, ExpressionHasher> cached_solutions_;
