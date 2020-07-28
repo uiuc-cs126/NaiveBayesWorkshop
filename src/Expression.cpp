@@ -53,11 +53,11 @@ std::istream& operator>>(std::istream& is, Expression& expression) {
 void Expression::ParseRawInput(const std::string& input) {
   size_t idx = 0;
 
-  std::string num1;
-  std::string num2;
+  std::string rawNum1 = "";
+  std::string rawNum2 = "";
 
   while(idx < input.size() && !isOperationChar(input[idx])) {
-    num1 += input[idx];
+    rawNum1 += input[idx];
     ++idx;
   }
 
@@ -66,16 +66,16 @@ void Expression::ParseRawInput(const std::string& input) {
     ++idx;
 
     while(idx < input.size()) {
-      num2 += input[idx];
+      rawNum2 += input[idx];
       ++idx;
     }
 
-    number1_ = std::stod(num1);
-    number2_ = std::stod(num2);
+    number1_ = std::stod(rawNum1);
+    number2_ = std::stod(rawNum2);
   }
   else {
     operator_ = Operation::kNoOperation;
-    number1_ = std::stod(num1);
+    number1_ = std::stod(rawNum1);
     number2_ = 0;
   }
 }
