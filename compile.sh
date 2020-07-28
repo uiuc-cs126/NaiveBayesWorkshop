@@ -8,3 +8,10 @@ cmake ..
 make
 
 echo 'Finished Compiling!'
+
+#If you want to run tests
+echo 'Running Test-Calculator'
+./tests/test-calculator
+
+#If you want to run main
+#./apps/main
