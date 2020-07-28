@@ -53,11 +53,11 @@ std::istream& operator>>(std::istream& is, Expression& exp) {
 void Expression::ParseRawInput(const std::string& input) {
   size_t idx = 0;
 
-  std::string num1;
-  std::string num2;
+  std::string numStr1;
+  std::string numStr2;
 
   while(idx < input.size() && !isOperationChar(input[idx])) {
-    num1 += input[idx];
+    numStr1 += input[idx];
     ++idx;
   }
 
@@ -66,18 +66,19 @@ void Expression::ParseRawInput(const std::string& input) {
     ++idx;
 
     while(idx < input.size()) {
-      num2 += input[idx];
+      numStr2 += input[idx];
       ++idx;
     }
 
-    number1_ = std::stod(num1);
-    number2_ = std::stod(num2);
+    number1_ = std::stod(numStr1);
+    number2_ = std::stod(numStr2);
   }
   else {
     op_ = Operation::kNoOperation;
-    number1_ = std::stod(num1);
+    number1_ = std::stod(numStr1);
     number2_ = 0;
   }
+
 }
 
 } // namespace math

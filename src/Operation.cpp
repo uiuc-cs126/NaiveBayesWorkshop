@@ -7,6 +7,7 @@ bool isOperationChar(char maybeOpChar) {
       maybeOpChar == kMultiplyChar || maybeOpChar == kDivideChar;
 }
 
+/*
 Operation charToOperation(char opChar) {
   switch (opChar) {
     case kAddChar:
@@ -21,6 +22,7 @@ Operation charToOperation(char opChar) {
 
   return Operation::kNoOperation;
 }
+*/
 
 std::ostream& operator<<(std::ostream& os, const Operation& op) {
   switch (op) {
