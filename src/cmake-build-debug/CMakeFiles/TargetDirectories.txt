@@ -1,2 +1,0 @@
-C:/Users/ragha/CLionProjects/NaiveBayesWorkshop/Code/src/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ragha/CLionProjects/NaiveBayesWorkshop/Code/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
