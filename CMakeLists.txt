@@ -28,10 +28,11 @@ include(FetchContent)
 
 # FetchContent_MakeAvailable was not added until CMake 3.14
 if(${CMAKE_VERSION} VERSION_LESS 3.14)
-    include(cmake/add_FetchContent_MakeAvailable.cmake)
+    message(${CMAKE_VERSION})
+    #include(cmake/add_FetchContent_MakeAvailable.cmake)
 endif()
 
-
+message(STATUS "We are before the subdirectory add")
 # The compiled library code is here
 add_subdirectory(src)
 

@@ -1,4 +1,5 @@
 #include "../interface/Expression.h"
+#include "../interface/Operation.h"
 #include <string>
 #include <stdexcept>
 
@@ -78,7 +79,6 @@ void Expression::ParseRawInput(const std::string& input) {
     number1_ = std::stod(raw_num_1);
     number2_ = 0;
   }
-
 }
 
 } // namespace math
