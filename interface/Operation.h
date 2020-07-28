@@ -21,8 +21,6 @@ enum Operation : char {
 
 bool isOperationChar(char maybeOpChar);
 
-// Operation charToOperation(char op);
-
 std::ostream& operator<<(std::ostream& os, const Operation& op);
 } //namespace math
 
