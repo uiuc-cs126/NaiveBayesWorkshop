@@ -11,17 +11,17 @@ const char kSubtractChar = '-';
 const char kMultiplyChar = '*';
 const char kDivideChar = '/';
 
-enum Operation {
-  kAdd,
-  kSubtract,
-  kMultiply,
-  kDivide,
+enum Operation : char {
+  kAdd = kAddChar,
+  kSubtract = kSubtractChar,
+  kMultiply = kMultiplyChar,
+  kDivide = kDivideChar,
   kNoOperation
 };
 
-bool isOperationChar(char c);
+bool isOperationChar(char maybeOpChar);
 
-Operation charToOperation(char c);
+// Operation charToOperation(char op);
 
 std::ostream& operator<<(std::ostream& os, const Operation& op);
 } //namespace math

@@ -7,8 +7,8 @@ bool isOperationChar(char maybeOpChar) {
       maybeOpChar == kMultiplyChar || maybeOpChar == kDivideChar;
 }
 
-Operation charToOperation(char opChar) {
-  switch (opChar) {
+Operation charToOperation(char op) {
+  switch (op) {
     case kAddChar:
       return Operation::kAdd;
     case kSubtractChar:

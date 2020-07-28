@@ -62,7 +62,7 @@ void Expression::ParseRawInput(const std::string& input) {
   }
 
   if(idx < input.size() - 1) { // Make sure that we have space for both the operation and a number afterwards
-    op_ = charToOperation(input[idx]);
+    op_ = static_cast<Operation>(input[idx]); // charToOperation(input[idx]);
     ++idx;
 
     while(idx < input.size()) {
