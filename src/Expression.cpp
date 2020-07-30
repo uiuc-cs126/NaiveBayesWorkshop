@@ -72,6 +72,7 @@ void Expression::ParseRawInput(const std::string& input) {
 
     // Make sure there is room for number after operator
     if ((search_results.position(0) + 1) >= input.size()) {
+      std::cout << __LINE__ << std::endl;
       throw new std::runtime_error("Invalid Syntax!");
     }
     number2_ = ParseNumber(input.substr(search_results.position(0) + 1, input.size()));
@@ -85,21 +86,24 @@ void Expression::ParseRawInput(const std::string& input) {
 double Expression::ParseNumber(std::string num_str) {
   // Remove spaces from the string
   num_str.erase(std::remove_if(num_str.begin(), num_str.end(), isspace), num_str.end());
+  std::cout << "Num str: " << num_str << std::endl;
 
   // Check for constants
   size_t special_char_search = num_str.find(kSpecialCharacterDelim);
   if(special_char_search == 0) {
     std::cout << __LINE__ << std::endl;
     if(num_str[1] == kPiChar) {
+      std::cout << __LINE__ << std::endl;
       return num_str.size() == 2 ? kPiVal : throw new std::runtime_error("Invalid Syntax!");
     }
     else if(num_str[1] == kEChar) {
+      std::cout << __LINE__ << std::endl;
       return num_str.size() == 2 ? kEVal : throw new std::runtime_error("Invalid Syntax!");
     }
   }
 
   // Should just be numbers from here
-  std::regex numbers_neg_regex("[^1-9]");
+  std::regex numbers_neg_regex("[^0-9-]");
   std::smatch search_results;
   std::regex_search(num_str, search_results, numbers_neg_regex);
 
