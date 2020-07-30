@@ -18,10 +18,10 @@ namespace math {
 //==================
 // Constants (The right way)
 //==================
-const char kSpecialCharacterDelim = '/';
+const char kSpecialCharacterDelim = '$';
 
-const std::string kPiStr = "pi";
-const std::string kEStr = "e";
+const char kPiChar = 'p';
+const char kEChar = 'e';
 const double kPiVal = 3.14;
 const double kEVal = 2.72;
 
@@ -35,7 +35,7 @@ class Expression {
     double ComputeSolution() const;
 
     // == Operator overload for hashing collisions
-    bool operator==(const Expression& rhs);
+    bool operator==(const Expression& rhs) const;
 
     // Input and Output stream operator overloads
     friend std::ostream& operator<<(std::ostream& os, const Expression& expression);
@@ -46,6 +46,7 @@ class Expression {
     // Helping Functions
     //==============
     void ParseRawInput(const std::string& input);
+    double ParseNumber(std::string num_str);
 
     //==============
     // Data members

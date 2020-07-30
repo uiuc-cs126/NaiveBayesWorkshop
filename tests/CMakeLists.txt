@@ -1,5 +1,5 @@
 # Tests need to be added as executables first
-add_executable(test-calculator test-calculator.cpp)
+add_executable(test-calculator test-calculator.cpp cached-calculator-tests.cpp test-expression.cpp)
 
 # We're using C++17 in the test
 target_compile_features(test-calculator PRIVATE cxx_std_17)

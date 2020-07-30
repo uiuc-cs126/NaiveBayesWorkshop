@@ -21,11 +21,6 @@ class CachedCalculator {
     // This is only really necessary when Calculator is given multiple constructors and you want a default constructor as well
     CachedCalculator() = default;
 
-    void SolveEquations();
-
-    // You can declare functions in line in the header file, but this should only be done with small, single line functions
-    inline std::vector<std::string> GetSolutions() { return solutions_; }
-
     // Stream operator overloads
     // You can also declare these inside the class definitino as a "friend", meaning these functions
     // have access to private members of the Calculator class
@@ -33,10 +28,15 @@ class CachedCalculator {
     friend std::istream& operator>>(std::istream& is, CachedCalculator& calculator);
 
   private:
-    std::unordered_map<Expression, double, ExpressionHasher> cached_solutions_;
+    //==============
+    // Helper Funcs
+    //==============
+    void AddToSolutions(const Expression& exp);
 
-    std::vector<Expression> expressions_;
-    std::vector<std::string> solutions_;
+    //=========
+    // Members
+    //=========
+    std::unordered_map<Expression, double, ExpressionHasher> cached_solutions_;
   };
   } // namespace math
 

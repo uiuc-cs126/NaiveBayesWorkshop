@@ -2,6 +2,7 @@
 #include "../interface/Operation.h"
 #include <string>
 #include <stdexcept>
+#include <regex>
 
 // A few ways to access the namespace 
 // We could put using math::Expression;
@@ -31,7 +32,7 @@ double Expression::ComputeSolution() const {
   }
 }
 
-bool Expression::operator==(const Expression& rhs) {
+bool Expression::operator==(const Expression& rhs) const {
   return number1_ == rhs.number1_ && number2_ == rhs.number2_ && operator_ == rhs.operator_;
 }
 
@@ -52,33 +53,63 @@ std::istream& operator>>(std::istream& is, Expression& expression) {
 }
 
 void Expression::ParseRawInput(const std::string& input) {
-  size_t idx = 0;
+  // Going to search for operator using regex
+  std::regex operator_regex("[*-+-/]");
+  std::smatch search_results;
+  std::regex_search(input, search_results, operator_regex);
+  std::cout << input << std::endl;
 
-  std::string raw_num_1 = "";
-  std::string raw_num_2 = "";
-
-  while(idx < input.size() && !isOperationChar(input[idx])) {
-    raw_num_1 += input[idx];
-    ++idx;
+  if(search_results.size() == 0) {
+    std::cout << __LINE__ << std::endl;
+    operator_ = Operation::kNoOperation;
+    number1_ = ParseNumber(input);
   }
+  else if(search_results.size() == 1) {
+    std::cout << __LINE__ << std::endl;
+    // Get operator, then parse into numbers the two substrings
+    operator_ = static_cast<Operation>(input[search_results.position(0)]);
+    number1_ = ParseNumber(input.substr(0, search_results.position(0)));
 
-  if(idx < input.size() - 1) { // Make sure that we have space for both the operation and a number afterwards
-    operator_ = static_cast<Operation>(input[idx]);
-    ++idx;
-
-    while(idx < input.size()) {
-      raw_num_2 += input[idx];
-      ++idx;
+    // Make sure there is room for number after operator
+    if ((search_results.position(0) + 1) >= input.size()) {
+      throw new std::runtime_error("Invalid Syntax!");
     }
-
-    number1_ = std::stod(raw_num_1);
-    number2_ = std::stod(raw_num_2);
+    number2_ = ParseNumber(input.substr(search_results.position(0) + 1, input.size()));
   }
   else {
-    operator_ = Operation::kNoOperation;
-    number1_ = std::stod(raw_num_1);
-    number2_ = 0;
+    std::cout << __LINE__ << std::endl;
+    throw new std::runtime_error("Sorry, only one operator is allowed!");
   }
+}
+
+double Expression::ParseNumber(std::string num_str) {
+  // Remove spaces from the string
+  num_str.erase(std::remove_if(num_str.begin(), num_str.end(), isspace), num_str.end());
+
+  // Check for constants
+  size_t special_char_search = num_str.find(kSpecialCharacterDelim);
+  if(special_char_search == 0) {
+    std::cout << __LINE__ << std::endl;
+    if(num_str[1] == kPiChar) {
+      return num_str.size() == 2 ? kPiVal : throw new std::runtime_error("Invalid Syntax!");
+    }
+    else if(num_str[1] == kEChar) {
+      return num_str.size() == 2 ? kEVal : throw new std::runtime_error("Invalid Syntax!");
+    }
+  }
+
+  // Should just be numbers from here
+  std::regex numbers_neg_regex("[^1-9]");
+  std::smatch search_results;
+  std::regex_search(num_str, search_results, numbers_neg_regex);
+
+  if(search_results.size() != 0) {
+    std::cout << __LINE__ << std::endl;
+    throw new std::runtime_error("Invalid Syntax!");
+  }
+
+  std::cout << __LINE__ << std::endl;
+  return std::stod(num_str);
 }
 
 } // namespace math
