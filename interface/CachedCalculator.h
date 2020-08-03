@@ -5,7 +5,7 @@
 
 // Library Files 
 #include <iostream>
-#include <string> //We should always use string rather than C-style char[]
+#include <string> // We should always use string rather than C-style char[]
 #include <unordered_map>
 #include <vector>
 
@@ -31,13 +31,13 @@ class CachedCalculator {
     //==============
     // Helper Funcs
     //==============
-    void AddToSolutions(const Expression& exp);
+    void StoreSolution(const Expression& exp);
 
     //=========
     // Members
     //=========
     std::unordered_map<Expression, double, ExpressionHasher> cached_solutions_;
   };
-  } // namespace math
+} // namespace math
 
 #endif

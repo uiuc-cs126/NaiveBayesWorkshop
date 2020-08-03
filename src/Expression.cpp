@@ -17,30 +17,30 @@ Expression::Expression(const std::string& input) {
 double Expression::ComputeSolution() const {
   switch (operator_) {
     case Operation::kAdd:
-      return number1_ + number2_;
+      return lhs_number_ + rhs_number_;
     case Operation::kSubtract:
-      return number1_ - number2_;
+      return lhs_number_ - rhs_number_;
     case Operation::kMultiply:
-      return number1_ * number2_;
+      return lhs_number_ * rhs_number_;
     case Operation::kDivide:
-      if(number2_) {
-        return number1_ / number2_;
+      if(rhs_number_ != 0) {
+        return lhs_number_ / rhs_number_;
       }
       throw new std::runtime_error("Math error: You cannot divide by 0!");
     case Operation::kNoOperation:
-      return number1_;
+      return lhs_number_;
   }
 }
 
 bool Expression::operator==(const Expression& rhs) const {
-  return number1_ == rhs.number1_ && number2_ == rhs.number2_ && operator_ == rhs.operator_;
+  return lhs_number_ == rhs.lhs_number_ && rhs_number_ == rhs.rhs_number_ && operator_ == rhs.operator_;
 }
 
 std::ostream& operator<<(std::ostream& os, const Expression& expression) {
   if(expression.operator_ == kNoOperation) {
-    return os << expression.number1_;
+    return os << expression.lhs_number_;
   }
-  return os << expression.number1_ << " " << expression.operator_ << " " << expression.number2_;
+  return os << expression.lhs_number_ << " " << expression.operator_ << " " << expression.rhs_number_;
 }
 
 std::istream& operator>>(std::istream& is, Expression& expression) {
@@ -62,20 +62,20 @@ void Expression::ParseRawInput(const std::string& input) {
   if(search_results.size() == 0) {
     std::cout << __LINE__ << std::endl;
     operator_ = Operation::kNoOperation;
-    number1_ = ParseNumber(input);
+    lhs_number_ = ParseNumber(input);
   }
   else if(search_results.size() == 1) {
     std::cout << __LINE__ << std::endl;
     // Get operator, then parse into numbers the two substrings
     operator_ = static_cast<Operation>(input[search_results.position(0)]);
-    number1_ = ParseNumber(input.substr(0, search_results.position(0)));
+    lhs_number_ = ParseNumber(input.substr(0, search_results.position(0)));
 
     // Make sure there is room for number after operator
     if ((search_results.position(0) + 1) >= input.size()) {
       std::cout << __LINE__ << std::endl;
       throw std::runtime_error("Invalid Syntax!");
     }
-    number2_ = ParseNumber(input.substr(search_results.position(0) + 1, input.size()));
+    rhs_number_ = ParseNumber(input.substr(search_results.position(0) + 1, input.size()));
   }
   else {
     std::cout << __LINE__ << std::endl;

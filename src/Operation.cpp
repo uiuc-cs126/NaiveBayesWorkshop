@@ -2,9 +2,9 @@
 
 namespace math {
 
-bool isOperationChar(char maybeOpChar) {
-  return maybeOpChar == kAddChar || maybeOpChar == kSubtractChar ||
-      maybeOpChar == kMultiplyChar || maybeOpChar == kDivideChar;
+bool IsOperationChar(char maybe_op_char) {
+  return maybe_op_char == kAddChar || maybe_op_char == kSubtractChar ||
+      maybe_op_char == kMultiplyChar || maybe_op_char == kDivideChar;
 }
 
 std::ostream& operator<<(std::ostream& os, const Operation& op) {

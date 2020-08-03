@@ -51,8 +51,8 @@ class Expression {
     //==============
     // Data members
     //==============
-    double number1_;
-    double number2_;
+    double lhs_number_;
+    double rhs_number_;
     Operation operator_;
   };
 
@@ -61,8 +61,8 @@ class Expression {
 //==================
 struct ExpressionHasher {
   inline size_t operator()(const Expression& exp) const {
-    return ((std::hash<double>()(exp.number1_)
-      ^ (std::hash<double>()(exp.number2_) << 1)) >> 1)
+    return ((std::hash<double>()(exp.lhs_number_)
+      ^ (std::hash<double>()(exp.rhs_number_) << 1)) >> 1)
       ^ (std::hash<int>()(exp.operator_) << 1);
   }
 };

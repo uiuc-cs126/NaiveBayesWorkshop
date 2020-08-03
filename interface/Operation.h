@@ -19,7 +19,7 @@ enum Operation : char {
   kNoOperation
 };
 
-bool isOperationChar(char maybeOpChar);
+bool IsOperationChar(char maybe_op_char);
 
 std::ostream& operator<<(std::ostream& os, const Operation& op);
 } //namespace math
