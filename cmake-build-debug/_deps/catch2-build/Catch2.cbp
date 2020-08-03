@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Catch2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\catch2-src\;CMake Files\src\;CMake Files\apps\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/cmake-build-debug/_deps/catch2-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\catch2-src\"/>
+		</Unit>
+		<Unit filename="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\apps\"/>
+		</Unit>
+		<Unit filename="/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
