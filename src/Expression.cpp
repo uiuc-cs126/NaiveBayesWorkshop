@@ -73,13 +73,13 @@ void Expression::ParseRawInput(const std::string& input) {
     // Make sure there is room for number after operator
     if ((search_results.position(0) + 1) >= input.size()) {
       std::cout << __LINE__ << std::endl;
-      throw new std::runtime_error("Invalid Syntax!");
+      throw std::runtime_error("Invalid Syntax!");
     }
     number2_ = ParseNumber(input.substr(search_results.position(0) + 1, input.size()));
   }
   else {
     std::cout << __LINE__ << std::endl;
-    throw new std::runtime_error("Sorry, only one operator is allowed!");
+    throw std::runtime_error("Sorry, only one operator is allowed!");
   }
 }
 
@@ -94,11 +94,11 @@ double Expression::ParseNumber(std::string num_str) {
     std::cout << __LINE__ << std::endl;
     if(num_str[1] == kPiChar) {
       std::cout << __LINE__ << std::endl;
-      return num_str.size() == 2 ? kPiVal : throw new std::runtime_error("Invalid Syntax!");
+      return num_str.size() == 2 ? kPiVal : throw std::runtime_error("Invalid Syntax!");
     }
     else if(num_str[1] == kEChar) {
       std::cout << __LINE__ << std::endl;
-      return num_str.size() == 2 ? kEVal : throw new std::runtime_error("Invalid Syntax!");
+      return num_str.size() == 2 ? kEVal : throw std::runtime_error("Invalid Syntax!");
     }
   }
 
@@ -109,7 +109,7 @@ double Expression::ParseNumber(std::string num_str) {
 
   if(search_results.size() != 0) {
     std::cout << __LINE__ << std::endl;
-    throw new std::runtime_error("Invalid Syntax!");
+    throw std::runtime_error("Invalid Syntax!");
   }
 
   std::cout << __LINE__ << std::endl;
