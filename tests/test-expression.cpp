@@ -5,7 +5,7 @@
 #include <exception>
 
 // Files to test
-#include "../interface/Expression.h"
+#include "Expression.h"
 
 using math::Expression;
 

@@ -1,9 +1,9 @@
 #include <iostream>
-#include "../interface/CachedCalculator.h"
+#include "CachedCalculator.h"
 
 int main() {
   math::CachedCalculator calculator;
-  std::cout << "Hello!" << std::endl;
+  std::cout << "Hello! world" << std::endl;
 
   return 0;
 }
