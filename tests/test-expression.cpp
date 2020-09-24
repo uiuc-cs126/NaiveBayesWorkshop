@@ -49,8 +49,12 @@ TEST_CASE("Testing Simple Valid Inputs", "[valid-expressions]") {
             Expression exp("75 / 25");
             REQUIRE(exp.ComputeSolution() == 3);
         }
+        SECTION("Catches Divide by 0", "[single-digit][invalid-syntax]") {
+            Expression exp("7 / 0");
+            CHECK_THROWS_AS(exp.ComputeSolution(), std::runtime_error);
+        }
     }
-    SECTION("Parsing no operation expressions correctly", "[no-operation]") {
+    SECTION("Parsing no operation expressions correctly", "[no-operation][constants]") {
         SECTION("Simple No Operation", "[single-digit]") {
             Expression exp("10");
             REQUIRE(exp.ComputeSolution() == 10);
@@ -64,9 +68,29 @@ TEST_CASE("Testing Simple Valid Inputs", "[valid-expressions]") {
             REQUIRE(exp.ComputeSolution() == math::kEVal);
         }
     }
+    SECTION("Using constant values in single operation expressions", "[constants]") {
+        SECTION("Multiplying with constants", "[multiplication") {
+            int secondDigit = 10;
+
+            Expression timesPi("$p * " + std::to_string(secondDigit));
+            Expression timesE("$e * " + std::to_string(secondDigit));
+
+            REQUIRE(timesPi.ComputeSolution() == (math::kPiVal * secondDigit));
+            REQUIRE(timesE.ComputeSolution() == (math::kEVal * secondDigit));
+        }
+        SECTION("Adding with constants", "[addition]") {
+            int secondDigit = 10;
+
+            Expression timesPi("$p + " + std::to_string(secondDigit));
+            Expression timesE("$e + " + std::to_string(secondDigit));
+
+            REQUIRE(timesPi.ComputeSolution() == (math::kPiVal + secondDigit));
+            REQUIRE(timesE.ComputeSolution() == (math::kEVal + secondDigit));
+        }
+    }
 }
 
-TEST_CASE("Testing Simple Invalid Inputs", "[invalid-syntax]") {
+TEST_CASE("Testing Invalid Inputs", "[invalid-syntax]") {
     SECTION("Operation Followed By No Number") {
         CHECK_THROWS_AS(Expression("12 -"), std::runtime_error);
     }
@@ -76,4 +100,11 @@ TEST_CASE("Testing Simple Invalid Inputs", "[invalid-syntax]") {
     SECTION("Random Letters [ 12 - abd ]") {
         CHECK_THROWS_AS(Expression("12 - abd"), std::runtime_error);
     }
+    SECTION("Valid syntax but multiple operations", "[multi-operation]") {
+        CHECK_THROWS_AS(Expression("5 * 10 * 2"), std::runtime_error);
+    }
+    SECTION("Valid syntax but we don't accept -Num") {
+        CHECK_THROWS_AS(Expression("-10"), std::runtime_error);
+    }
 }
+

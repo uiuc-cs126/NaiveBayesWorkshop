@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.13.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop
+CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build
+CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/tests/CMakeFiles/progress.marks
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/tests/CMakeFiles/progress.marks
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,23 +97,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/test-calculator.dir/rule:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-calculator.dir/rule
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-calculator.dir/rule
 .PHONY : tests/CMakeFiles/test-calculator.dir/rule
 
 # Convenience name for target.
@@ -123,7 +123,7 @@ test-calculator: tests/CMakeFiles/test-calculator.dir/rule
 
 # fast build rule for target.
 test-calculator/fast:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/build
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/build
 .PHONY : test-calculator/fast
 
 cached-calculator-tests.o: cached-calculator-tests.cpp.o
@@ -132,7 +132,7 @@ cached-calculator-tests.o: cached-calculator-tests.cpp.o
 
 # target to build an object file
 cached-calculator-tests.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.o
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.o
 .PHONY : cached-calculator-tests.cpp.o
 
 cached-calculator-tests.i: cached-calculator-tests.cpp.i
@@ -141,7 +141,7 @@ cached-calculator-tests.i: cached-calculator-tests.cpp.i
 
 # target to preprocess a source file
 cached-calculator-tests.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.i
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.i
 .PHONY : cached-calculator-tests.cpp.i
 
 cached-calculator-tests.s: cached-calculator-tests.cpp.s
@@ -150,7 +150,7 @@ cached-calculator-tests.s: cached-calculator-tests.cpp.s
 
 # target to generate assembly for a file
 cached-calculator-tests.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.s
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.s
 .PHONY : cached-calculator-tests.cpp.s
 
 test-calculator.o: test-calculator.cpp.o
@@ -159,7 +159,7 @@ test-calculator.o: test-calculator.cpp.o
 
 # target to build an object file
 test-calculator.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-calculator.cpp.o
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-calculator.cpp.o
 .PHONY : test-calculator.cpp.o
 
 test-calculator.i: test-calculator.cpp.i
@@ -168,7 +168,7 @@ test-calculator.i: test-calculator.cpp.i
 
 # target to preprocess a source file
 test-calculator.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-calculator.cpp.i
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-calculator.cpp.i
 .PHONY : test-calculator.cpp.i
 
 test-calculator.s: test-calculator.cpp.s
@@ -177,7 +177,7 @@ test-calculator.s: test-calculator.cpp.s
 
 # target to generate assembly for a file
 test-calculator.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-calculator.cpp.s
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-calculator.cpp.s
 .PHONY : test-calculator.cpp.s
 
 test-expression.o: test-expression.cpp.o
@@ -186,7 +186,7 @@ test-expression.o: test-expression.cpp.o
 
 # target to build an object file
 test-expression.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-expression.cpp.o
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-expression.cpp.o
 .PHONY : test-expression.cpp.o
 
 test-expression.i: test-expression.cpp.i
@@ -195,7 +195,7 @@ test-expression.i: test-expression.cpp.i
 
 # target to preprocess a source file
 test-expression.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-expression.cpp.i
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-expression.cpp.i
 .PHONY : test-expression.cpp.i
 
 test-expression.s: test-expression.cpp.s
@@ -204,7 +204,7 @@ test-expression.s: test-expression.cpp.s
 
 # target to generate assembly for a file
 test-expression.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-expression.cpp.s
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/test-expression.cpp.s
 .PHONY : test-expression.cpp.s
 
 # Help Target
@@ -236,7 +236,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

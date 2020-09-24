@@ -17,8 +17,10 @@ namespace math {
 
 class CachedCalculator {
   public:
-    // This is one way to declare a default constructor, but if not included at all, the compiler will create your class assuming this line
-    // This is only really necessary when Calculator is given multiple constructors and you want a default constructor as well
+    // This is one way to declare a default constructor, but if not included at all, the compiler will create your
+    // class assuming this line
+    // This is only really necessary when Calculator is given multiple constructors and you want a default
+    // constructor as well
     CachedCalculator() = default;
 
     // Stream operator overloads
@@ -26,6 +28,9 @@ class CachedCalculator {
     // have access to private members of the Calculator class
     friend std::ostream& operator<<(std::ostream& os, const CachedCalculator& calculator);
     friend std::istream& operator>>(std::istream& is, CachedCalculator& calculator);
+
+    // For testing purposes
+    std::unordered_map<Expression, double, ExpressionHasher> GetCachedSolutions() { return cached_solutions_; }
 
   private:
     //==============
