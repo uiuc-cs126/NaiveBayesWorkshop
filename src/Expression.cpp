@@ -1,5 +1,5 @@
-#include "../interface/Expression.h"
-#include "../interface/Operation.h"
+#include "Expression.h"
+#include "Operation.h"
 #include <string>
 #include <stdexcept>
 #include <regex>

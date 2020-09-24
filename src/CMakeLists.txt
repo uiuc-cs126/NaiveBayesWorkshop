@@ -4,8 +4,8 @@
 # set(HEADER_LIST "${ModernCMakeExample_SOURCE_DIR}/include/modern/lib.hpp")
 # Optionally glob, but only for CMake 3.12 or later:
 file(GLOB HEADER_LIST CONFIGURE_DEPENDS
-        "${NaiveBayesWorkshop_SOURCE_DIR}/interface/math/*.h"
-        "${NaiveBayesWorkshop_SOURCE_DIR}/interface/math/*.hpp")
+        "${NaiveBayesWorkshop_SOURCE_DIR}/interface/*.h"
+        "${NaiveBayesWorkshop_SOURCE_DIR}/interface/*.hpp")
 file(GLOB SOURCE_LIST CONFIGURE_DEPENDS
         "${NaiveBayesWorkshop_SOURCE_DIR}/src/*.cc"
         "${NaiveBayesWorkshop_SOURCE_DIR}/src/*.cpp")
@@ -14,10 +14,7 @@ file(GLOB SOURCE_LIST CONFIGURE_DEPENDS
 add_library(math ${SOURCE_LIST} ${HEADER_LIST})
 
 # We need this directory, and users of our library will need it too
-target_include_directories(math PUBLIC ../../interface)
+target_include_directories(math PUBLIC ../interface)
 
 # All users of this library will need at least C++11
 target_compile_features(math PUBLIC cxx_std_11)
-
-# IDEs should put the headers in a nice place
-source_group(TREE "../../interface" PREFIX "Header Files" FILES ${HEADER_LIST})
