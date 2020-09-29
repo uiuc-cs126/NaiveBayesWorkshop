@@ -94,16 +94,16 @@ TEST_CASE("Testing Invalid Inputs", "[invalid-syntax]") {
     SECTION("Operation Followed By No Number") {
         CHECK_THROWS_AS(Expression("12 -"), std::runtime_error);
     }
-    SECTION("Multiple Operators [ 12 + * 13 ]") {
+    SECTION("Multiple Consecutive Operators") {
         CHECK_THROWS_AS(Expression("12 + * 13"), std::runtime_error);
     }
-    SECTION("Random Letters [ 12 - abd ]") {
+    SECTION("Non-numeric Characters") {
         CHECK_THROWS_AS(Expression("12 - abd"), std::runtime_error);
     }
     SECTION("Valid syntax but multiple operations", "[multi-operation]") {
         CHECK_THROWS_AS(Expression("5 * 10 * 2"), std::runtime_error);
     }
-    SECTION("Valid syntax but we don't accept -Num") {
+    SECTION("Negated number without operation") {
         CHECK_THROWS_AS(Expression("-10"), std::runtime_error);
     }
 }
