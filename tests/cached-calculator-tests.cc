@@ -8,8 +8,8 @@
 #include <sstream>
 
 // Files to test
-#include "../interface/CachedCalculator.h"
-#include "../interface/Expression.h"
+#include "../interface/cached_calculator.h"
+#include "../interface/expression.h"
 
 typedef std::unordered_map<math::Expression, double, math::ExpressionHasher> cached_solutions_t;
 

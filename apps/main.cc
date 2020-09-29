@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CachedCalculator.h"
+#include "cached_calculator.h"
 
 int main() {
   math::CachedCalculator calculator;

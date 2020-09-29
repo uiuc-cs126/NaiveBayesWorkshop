@@ -1,5 +1,5 @@
-#include "Expression.h"
-#include "Operation.h"
+#include "expression.h"
+#include "operation.h"
 #include <string>
 #include <stdexcept>
 #include <regex>

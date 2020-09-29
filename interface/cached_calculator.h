@@ -10,8 +10,8 @@
 #include <vector>
 
 // Our Files
-#include "Expression.h"
-#include "Operation.h"
+#include "expression.h"
+#include "operation.h"
 
 namespace math {
 

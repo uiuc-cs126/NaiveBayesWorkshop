@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#include "Operation.h"
+#include "operation.h"
 
 //==============
 // How NOT to define constants
