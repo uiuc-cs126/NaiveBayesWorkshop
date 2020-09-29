@@ -9,36 +9,58 @@
 
 // Files to test
 #include "../interface/CachedCalculator.h"
+#include "../interface/Expression.h"
+
+typedef std::unordered_map<math::Expression, double, math::ExpressionHasher> cached_solutions_t;
 
 //=====================
 // Cached Calculator Tests
 //=====================
 TEST_CASE("Calculator takes in expressions and stores them", "[istream]") {
-    SECTION("Input of a single line", "[single-input]") {
-        std::string input = "1 + 1";
-        std::istringstream input_sstream(input);
+  cached_solutions_t expected_cache;
+  math::CachedCalculator calculator;
 
-        math::CachedCalculator calculator;
-        input_sstream >> calculator;
+  SECTION("Input of a single line", "[single-input]") {
+    std::string input = "1 + 1";
+    expected_cache.insert(std::make_pair(math::Expression(input), 2));
 
-        REQUIRE(calculator.GetCachedSolutions().size() == 1);
+    std::istringstream input_sstream(input);
+    input_sstream >> calculator;
+
+    REQUIRE(calculator.GetCachedSolutions() == expected_cache);
+  }
+
+  SECTION("Multi-line input is transformed into a cache", "[multi-input]") {
+    std::vector<std::string> inputs = {"0+0", "1+0", "1+1", "1+2"};
+    std::string input_combined;
+
+    for (size_t i = 0; i < inputs.size(); ++i) {
+      input_combined += inputs[i];
+      if (i < inputs.size() - 1) {
+        input_combined += '\n';
+      }
+      expected_cache.insert(std::make_pair(math::Expression(inputs[i]), i));
     }
-    SECTION("Input of multiple lines", "[multi-input]") {
-        std::string input = "1 + 1\n1+2\n1+3\n1+4";
-        std::istringstream input_sstream(input);
+    std::istringstream input_sstream(input_combined);
+    input_sstream >> calculator;
 
-        math::CachedCalculator calculator;
-        input_sstream >> calculator;
+    REQUIRE(calculator.GetCachedSolutions() == expected_cache);
+  }
 
-        REQUIRE(calculator.GetCachedSolutions().size() == 4);
+  SECTION("Repeated lines are caught and stored only once", "[multi-input]") {
+    std::vector<std::string> inputs = {"0+0", "1+0", "1+1", "0+0"};
+    std::string input_combined;
+
+    for (size_t i = 0; i < inputs.size() - 1; ++i) {
+      input_combined += inputs[i];
+      if (i < inputs.size() - 2) {
+        input_combined += '\n';
+      }
+      expected_cache.insert(std::make_pair(math::Expression(inputs[i]), i));
     }
-    SECTION("Repeated lines are caught and stored only once", "[multi-input]") {
-        std::string input = "1 + 1\n1+2\n1+3\n1+1";
-        std::istringstream input_sstream(input);
+    std::istringstream input_sstream(input_combined);
+    input_sstream >> calculator;
 
-        math::CachedCalculator calculator;
-        input_sstream >> calculator;
-
-        REQUIRE(calculator.GetCachedSolutions().size() == 3);
-    }
+    REQUIRE(calculator.GetCachedSolutions() == expected_cache);
+  }
 }
