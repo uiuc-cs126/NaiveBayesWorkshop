@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.13.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop
+CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build
+CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/apps/CMakeFiles/progress.marks
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/apps/CMakeFiles/progress.marks
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/clean
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,23 +97,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/CMakeFiles/main.dir/rule:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/CMakeFiles/main.dir/rule
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 apps/CMakeFiles/main.dir/rule
 .PHONY : apps/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -123,35 +123,35 @@ main: apps/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/build
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-main.o: main.cpp.o
+main.o: main.cc.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.cc.o:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.cc.o
+.PHONY : main.cc.o
 
-main.i: main.cpp.i
+main.i: main.cc.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.cc.i:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.cpp.s
+main.s: main.cc.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cc.s:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -176,7 +176,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

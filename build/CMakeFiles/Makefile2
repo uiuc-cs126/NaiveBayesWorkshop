@@ -59,10 +59,10 @@ RM = /usr/local/Cellar/cmake/3.13.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop
+CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build
+CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -89,7 +89,7 @@ src/preinstall:
 src/CMakeFiles/math.dir/all:
 	$(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/depend
 	$(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num=3,4,5,6 "Built target math"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num=3,4,5,6 "Built target math"
 .PHONY : src/CMakeFiles/math.dir/all
 
 # Include target in all.
@@ -99,9 +99,9 @@ all: src/CMakeFiles/math.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/math.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/math.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/math.dir/rule
 
 # Convenience name for target.
@@ -144,7 +144,7 @@ apps/preinstall:
 apps/CMakeFiles/main.dir/all: src/CMakeFiles/math.dir/all
 	$(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/depend
 	$(MAKE) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num=1,2 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num=1,2 "Built target main"
 .PHONY : apps/CMakeFiles/main.dir/all
 
 # Include target in all.
@@ -154,9 +154,9 @@ all: apps/CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 apps/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 apps/CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : apps/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -199,7 +199,7 @@ tests/preinstall:
 tests/CMakeFiles/test-calculator.dir/all: src/CMakeFiles/math.dir/all
 	$(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/depend
 	$(MAKE) -f tests/CMakeFiles/test-calculator.dir/build.make tests/CMakeFiles/test-calculator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num=7,8,9,10 "Built target test-calculator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num=7,8,9,10 "Built target test-calculator"
 .PHONY : tests/CMakeFiles/test-calculator.dir/all
 
 # Include target in all.
@@ -209,9 +209,9 @@ all: tests/CMakeFiles/test-calculator.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test-calculator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-calculator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test-calculator.dir/rule
 
 # Convenience name for target.
@@ -281,14 +281,14 @@ _deps/catch2-build/preinstall:
 _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousCoverage"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -313,14 +313,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousCoverage.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousTest.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousTest.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousTest.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousTest.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousTest"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousTest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -345,14 +345,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousTest.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousBuild"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -377,14 +377,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousBuild.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousStart.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousStart.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousStart.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousStart.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousStart"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousStart.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -409,14 +409,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousStart.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalBuild"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -441,14 +441,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalBuild.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -473,14 +473,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalCoverage.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalSubmit"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -505,14 +505,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalSubmit.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -537,14 +537,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousUpdate.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalUpdate"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -569,14 +569,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalUpdate.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -601,14 +601,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalStart.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousSubmit"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -633,14 +633,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousSubmit.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -665,14 +665,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalTest.dir/clean
 _deps/catch2-build/CMakeFiles/NightlySubmit.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlySubmit.dir/build.make _deps/catch2-build/CMakeFiles/NightlySubmit.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlySubmit.dir/build.make _deps/catch2-build/CMakeFiles/NightlySubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlySubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlySubmit"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlySubmit.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlySubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -697,14 +697,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlySubmit.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyMemCheck"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -729,14 +729,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyMemCheck.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -761,14 +761,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalConfigure.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -793,14 +793,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyCoverage.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyTest.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyTest.dir/build.make _deps/catch2-build/CMakeFiles/NightlyTest.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyTest.dir/build.make _deps/catch2-build/CMakeFiles/NightlyTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyTest"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyTest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -825,14 +825,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyTest.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -857,14 +857,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousMemCheck.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyBuild.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyBuild.dir/build.make _deps/catch2-build/CMakeFiles/NightlyBuild.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyBuild.dir/build.make _deps/catch2-build/CMakeFiles/NightlyBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyBuild"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyBuild.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -889,14 +889,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyBuild.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -921,14 +921,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyConfigure.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -953,14 +953,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -985,14 +985,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyMemoryCheck.dir/clean
 _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ContinuousConfigure"
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -1017,14 +1017,14 @@ clean: _deps/catch2-build/CMakeFiles/ContinuousConfigure.dir/clean
 _deps/catch2-build/CMakeFiles/Nightly.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/Nightly.dir/build.make _deps/catch2-build/CMakeFiles/Nightly.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/Nightly.dir/build.make _deps/catch2-build/CMakeFiles/Nightly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target Nightly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target Nightly"
 .PHONY : _deps/catch2-build/CMakeFiles/Nightly.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/Nightly.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -1049,14 +1049,14 @@ clean: _deps/catch2-build/CMakeFiles/Nightly.dir/clean
 _deps/catch2-build/CMakeFiles/NightlyStart.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyStart.dir/build.make _deps/catch2-build/CMakeFiles/NightlyStart.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/NightlyStart.dir/build.make _deps/catch2-build/CMakeFiles/NightlyStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target NightlyStart"
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyStart.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/NightlyStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -1081,14 +1081,14 @@ clean: _deps/catch2-build/CMakeFiles/NightlyStart.dir/clean
 _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -1113,14 +1113,14 @@ clean: _deps/catch2-build/CMakeFiles/ExperimentalMemCheck.dir/clean
 _deps/catch2-build/CMakeFiles/Continuous.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/Continuous.dir/build.make _deps/catch2-build/CMakeFiles/Continuous.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/Continuous.dir/build.make _deps/catch2-build/CMakeFiles/Continuous.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target Continuous"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target Continuous"
 .PHONY : _deps/catch2-build/CMakeFiles/Continuous.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/Continuous.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -1145,14 +1145,14 @@ clean: _deps/catch2-build/CMakeFiles/Continuous.dir/clean
 _deps/catch2-build/CMakeFiles/Experimental.dir/all:
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/Experimental.dir/build.make _deps/catch2-build/CMakeFiles/Experimental.dir/depend
 	$(MAKE) -f _deps/catch2-build/CMakeFiles/Experimental.dir/build.make _deps/catch2-build/CMakeFiles/Experimental.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target Experimental"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles --progress-num= "Built target Experimental"
 .PHONY : _deps/catch2-build/CMakeFiles/Experimental.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 _deps/catch2-build/CMakeFiles/Experimental.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -1177,7 +1177,7 @@ clean: _deps/catch2-build/CMakeFiles/Experimental.dir/clean
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

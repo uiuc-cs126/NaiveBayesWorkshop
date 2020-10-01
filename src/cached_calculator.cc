@@ -1,6 +1,8 @@
 // Make sure to include header file 
 #include "cached_calculator.h"
 
+#include <sstream>
+
 // Here is the other way you could indicate the namespace holding the class in your .cpp file 
 void math::CachedCalculator::StoreSolution(const Expression& exp) {
   // If the expression already exists, we are not going to do anything
@@ -17,9 +19,16 @@ std::ostream& math::operator<<(std::ostream& os, const math::CachedCalculator& c
 }
 
 std::istream& math::operator>>(std::istream& is, math::CachedCalculator& calculator) {
-  while(!is.eof()) {
+  std::string input_line;
+
+  while(std::getline(is, input_line)) {
       Expression expression;
-      is >> expression;
+      std::stringstream line_stream(input_line);
+
+
+      if(input_line.size() == 0) { continue; }
+
+      line_stream >> expression;
 
       calculator.StoreSolution(expression);
   }

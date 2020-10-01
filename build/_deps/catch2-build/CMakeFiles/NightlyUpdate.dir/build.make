@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.13.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop
+CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build
+CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build
 
 # Utility rule file for NightlyUpdate.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWor
 include _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/progress.make
 
 _deps/catch2-build/CMakeFiles/NightlyUpdate:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/_deps/catch2-build && /usr/local/Cellar/cmake/3.13.1/bin/ctest -D NightlyUpdate
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/_deps/catch2-build && /usr/local/Cellar/cmake/3.13.1/bin/ctest -D NightlyUpdate
 
 NightlyUpdate: _deps/catch2-build/CMakeFiles/NightlyUpdate
 NightlyUpdate: _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/build.make
@@ -67,10 +67,10 @@ _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/build: NightlyUpdate
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/build
 
 _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/clean:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/_deps/catch2-build && $(CMAKE_COMMAND) -P CMakeFiles/NightlyUpdate.dir/cmake_clean.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/_deps/catch2-build && $(CMAKE_COMMAND) -P CMakeFiles/NightlyUpdate.dir/cmake_clean.cmake
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/clean
 
 _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/depend:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/_deps/catch2-src /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/_deps/catch2-build /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/_deps/catch2-build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/_deps/catch2-src /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/_deps/catch2-build /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/_deps/catch2-build/CMakeFiles/NightlyUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/catch2-build/CMakeFiles/NightlyUpdate.dir/depend
 

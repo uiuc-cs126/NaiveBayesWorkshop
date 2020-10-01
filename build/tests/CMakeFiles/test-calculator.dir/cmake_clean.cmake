@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test-calculator.dir/test-calculator.cpp.o"
-  "CMakeFiles/test-calculator.dir/cached-calculator-tests.cpp.o"
-  "CMakeFiles/test-calculator.dir/test-expression.cpp.o"
+  "CMakeFiles/test-calculator.dir/test-calculator.cc.o"
+  "CMakeFiles/test-calculator.dir/test-expression.cc.o"
+  "CMakeFiles/test-calculator.dir/cached-calculator-tests.cc.o"
   "test-calculator.pdb"
   "test-calculator"
 )

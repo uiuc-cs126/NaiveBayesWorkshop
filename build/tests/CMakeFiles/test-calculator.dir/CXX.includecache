@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/CachedCalculator.h
+../src/../interface/expression.h
+iostream
+-
+operation.h
+../src/../interface/operation.h
+
+../src/../interface/operation.h
+string
+-
+iostream
+-
+
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/cached_calculator.h
 iostream
 -
 string
@@ -15,42 +27,46 @@ unordered_map
 -
 vector
 -
-Expression.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Expression.h
-Operation.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Operation.h
+expression.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/expression.h
+operation.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/operation.h
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Expression.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/expression.h
 iostream
 -
-Operation.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Operation.h
+operation.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/operation.h
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Operation.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/operation.h
 string
 -
 iostream
 -
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/tests/cached-calculator-tests.cpp
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/tests/cached-calculator-tests.cc
 catch2/catch.hpp
 -
 sstream
 -
-../interface/CachedCalculator.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/CachedCalculator.h
+fstream
+-
+../interface/cached_calculator.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/cached_calculator.h
+../interface/expression.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/expression.h
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/tests/test-calculator.cpp
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/tests/test-calculator.cc
 catch2/catch.hpp
 -
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/tests/test-expression.cpp
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/tests/test-expression.cc
 catch2/catch.hpp
 -
 exception
 -
-../interface/Expression.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Expression.h
+expression.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/tests/expression.h
 
 _deps/catch2-src/single_include/catch2/catch.hpp
 TargetConditionals.h

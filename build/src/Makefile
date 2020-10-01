@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.13.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop
+CMAKE_SOURCE_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build
+CMAKE_BINARY_DIR = /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/src/CMakeFiles/progress.marks
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles 0
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/src/CMakeFiles/progress.marks
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,23 +97,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/math.dir/rule:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/math.dir/rule
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/math.dir/rule
 .PHONY : src/CMakeFiles/math.dir/rule
 
 # Convenience name for target.
@@ -123,89 +123,89 @@ math: src/CMakeFiles/math.dir/rule
 
 # fast build rule for target.
 math/fast:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/build
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/build
 .PHONY : math/fast
 
-CachedCalculator.o: CachedCalculator.cpp.o
+cached_calculator.o: cached_calculator.cc.o
 
-.PHONY : CachedCalculator.o
-
-# target to build an object file
-CachedCalculator.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/CachedCalculator.cpp.o
-.PHONY : CachedCalculator.cpp.o
-
-CachedCalculator.i: CachedCalculator.cpp.i
-
-.PHONY : CachedCalculator.i
-
-# target to preprocess a source file
-CachedCalculator.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/CachedCalculator.cpp.i
-.PHONY : CachedCalculator.cpp.i
-
-CachedCalculator.s: CachedCalculator.cpp.s
-
-.PHONY : CachedCalculator.s
-
-# target to generate assembly for a file
-CachedCalculator.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/CachedCalculator.cpp.s
-.PHONY : CachedCalculator.cpp.s
-
-Expression.o: Expression.cpp.o
-
-.PHONY : Expression.o
+.PHONY : cached_calculator.o
 
 # target to build an object file
-Expression.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/Expression.cpp.o
-.PHONY : Expression.cpp.o
+cached_calculator.cc.o:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/cached_calculator.cc.o
+.PHONY : cached_calculator.cc.o
 
-Expression.i: Expression.cpp.i
+cached_calculator.i: cached_calculator.cc.i
 
-.PHONY : Expression.i
+.PHONY : cached_calculator.i
 
 # target to preprocess a source file
-Expression.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/Expression.cpp.i
-.PHONY : Expression.cpp.i
+cached_calculator.cc.i:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/cached_calculator.cc.i
+.PHONY : cached_calculator.cc.i
 
-Expression.s: Expression.cpp.s
+cached_calculator.s: cached_calculator.cc.s
 
-.PHONY : Expression.s
+.PHONY : cached_calculator.s
 
 # target to generate assembly for a file
-Expression.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/Expression.cpp.s
-.PHONY : Expression.cpp.s
+cached_calculator.cc.s:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/cached_calculator.cc.s
+.PHONY : cached_calculator.cc.s
 
-Operation.o: Operation.cpp.o
+expression.o: expression.cc.o
 
-.PHONY : Operation.o
+.PHONY : expression.o
 
 # target to build an object file
-Operation.cpp.o:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/Operation.cpp.o
-.PHONY : Operation.cpp.o
+expression.cc.o:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/expression.cc.o
+.PHONY : expression.cc.o
 
-Operation.i: Operation.cpp.i
+expression.i: expression.cc.i
 
-.PHONY : Operation.i
+.PHONY : expression.i
 
 # target to preprocess a source file
-Operation.cpp.i:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/Operation.cpp.i
-.PHONY : Operation.cpp.i
+expression.cc.i:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/expression.cc.i
+.PHONY : expression.cc.i
 
-Operation.s: Operation.cpp.s
+expression.s: expression.cc.s
 
-.PHONY : Operation.s
+.PHONY : expression.s
 
 # target to generate assembly for a file
-Operation.cpp.s:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/Operation.cpp.s
-.PHONY : Operation.cpp.s
+expression.cc.s:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/expression.cc.s
+.PHONY : expression.cc.s
+
+operation.o: operation.cc.o
+
+.PHONY : operation.o
+
+# target to build an object file
+operation.cc.o:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/operation.cc.o
+.PHONY : operation.cc.o
+
+operation.i: operation.cc.i
+
+.PHONY : operation.i
+
+# target to preprocess a source file
+operation.cc.i:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/operation.cc.i
+.PHONY : operation.cc.i
+
+operation.s: operation.cc.s
+
+.PHONY : operation.s
+
+# target to generate assembly for a file
+operation.cc.s:
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(MAKE) -f src/CMakeFiles/math.dir/build.make src/CMakeFiles/math.dir/operation.cc.s
+.PHONY : operation.cc.s
 
 # Help Target
 help:
@@ -216,15 +216,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... math"
-	@echo "... CachedCalculator.o"
-	@echo "... CachedCalculator.i"
-	@echo "... CachedCalculator.s"
-	@echo "... Expression.o"
-	@echo "... Expression.i"
-	@echo "... Expression.s"
-	@echo "... Operation.o"
-	@echo "... Operation.i"
-	@echo "... Operation.s"
+	@echo "... cached_calculator.o"
+	@echo "... cached_calculator.i"
+	@echo "... cached_calculator.s"
+	@echo "... expression.o"
+	@echo "... expression.i"
+	@echo "... expression.s"
+	@echo "... operation.o"
+	@echo "... operation.i"
+	@echo "... operation.s"
 .PHONY : help
 
 
@@ -236,7 +236,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -P /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

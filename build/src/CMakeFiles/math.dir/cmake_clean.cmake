@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/math.dir/CachedCalculator.cpp.o"
-  "CMakeFiles/math.dir/Expression.cpp.o"
-  "CMakeFiles/math.dir/Operation.cpp.o"
+  "CMakeFiles/math.dir/cached_calculator.cc.o"
+  "CMakeFiles/math.dir/expression.cc.o"
+  "CMakeFiles/math.dir/operation.cc.o"
   "libmath.pdb"
   "libmath.a"
 )

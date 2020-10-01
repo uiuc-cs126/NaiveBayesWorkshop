@@ -24,10 +24,8 @@ double Expression::ComputeSolution() const {
       return lhs_number_ * rhs_number_;
     case Operation::kDivide:
       if(rhs_number_ != 0) {
-      std::cout << "Here in not equal 0" << std::endl;
         return lhs_number_ / rhs_number_;
       }
-      std::cout << "Throwing runtime error" << std::endl;
       throw std::runtime_error("Math error: You cannot divide by 0!");
     case Operation::kNoOperation:
       return lhs_number_;
@@ -60,41 +58,29 @@ void Expression::ParseRawInput(const std::string& input) {
   std::smatch search_results;
   std::string input_copy = input;
   std::vector<int> operator_indices;
-    //std::cout << input_copy << std::endl;
 
-    // Make sure that we find all instances of an operator in input string
+  // Make sure that we find all instances of an operator in input string
   while (std::regex_search(input_copy, search_results, operator_regex)) {
     operator_indices.push_back(search_results.position(0));
-    //std::cout << search_results.position(search_results.size() - 1) << std::endl;
     input_copy = input_copy.substr(search_results.position(search_results.size() - 1) + 1);
-      //std::cout << input_copy << std::endl;
   }
 
-  //std::cout << input << std::endl;
-  //std::cout << search_results.size() << std::endl;
-
   if(operator_indices.size() == 0) { // Operator not found
-    std::cout << __LINE__ << std::endl;
     operator_ = Operation::kNoOperation;
     lhs_number_ = ParseNumber(input);
   }
-  else if(operator_indices.size() == 1) { //
-    std::cout << __LINE__ << std::endl;
+  else if(operator_indices.size() == 1) { // Found one operator
     // Get operator, then parse into numbers the two substrings
     operator_ = static_cast<Operation>(input[operator_indices[0]]);
     lhs_number_ = ParseNumber(input.substr(0, operator_indices[0]));
 
     // Make sure there is room for number after operator
     if ((operator_indices[0] + 1) >= input.size()) {
-      std::cout << __LINE__ << std::endl;
       throw std::runtime_error("Invalid Syntax!");
     }
-    std::cout << __LINE__ << std::endl;
-    rhs_number_ = ParseNumber(input.substr(search_results.position(0) + 1, input.size()));
-    std::cout << "Number 1: " << lhs_number_ << " Number 2: " << rhs_number_ << std::endl;
+    rhs_number_ = ParseNumber(input.substr(operator_indices[0] + 1, input.size()));
   }
   else {
-    std::cout << __LINE__ << std::endl;
     throw std::runtime_error("Sorry, only one operator is allowed!");
   }
 }
@@ -106,13 +92,10 @@ double Expression::ParseNumber(std::string num_str) {
   // Check for constants
   size_t special_char_search = num_str.find(kSpecialCharacterDelim);
   if(special_char_search == 0) {
-    //std::cout << __LINE__ << std::endl;
     if(num_str[1] == kPiChar) {
-      //std::cout << __LINE__ << std::endl;
       return num_str.size() == 2 ? kPiVal : throw std::runtime_error("Invalid Syntax!");
     }
     else if(num_str[1] == kEChar) {
-      //std::cout << __LINE__ << std::endl;
       return num_str.size() == 2 ? kEVal : throw std::runtime_error("Invalid Syntax!");
     }
   }
@@ -121,13 +104,10 @@ double Expression::ParseNumber(std::string num_str) {
   std::regex numbers_neg_regex("[^0-9]");
   std::smatch search_results;
   std::regex_search(num_str, search_results, numbers_neg_regex);
-    //std::cout << num_str << std::endl;
   if(search_results.size() != 0 || num_str.size() == 0) { // If we have an empty string or regex match
-    //std::cout << __LINE__ << std::endl;
     throw std::runtime_error("Invalid Syntax!");
   }
 
-  //std::cout << __LINE__ << std::endl;
   return std::stod(num_str);
 }
 

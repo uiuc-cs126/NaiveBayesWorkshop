@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/apps/main.cpp
-iostream
--
-../interface/CachedCalculator.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/CachedCalculator.h
-
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/CachedCalculator.h
+../src/../interface/cached_calculator.h
 iostream
 -
 string
@@ -21,20 +15,26 @@ unordered_map
 -
 vector
 -
-Expression.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Expression.h
-Operation.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Operation.h
+expression.h
+../src/../interface/expression.h
+operation.h
+../src/../interface/operation.h
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Expression.h
+../src/../interface/expression.h
 iostream
 -
-Operation.h
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Operation.h
+operation.h
+../src/../interface/operation.h
 
-/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/NaiveBayesWorkshop/interface/Operation.h
+../src/../interface/operation.h
 string
 -
 iostream
 -
+
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/apps/main.cc
+iostream
+-
+cached_calculator.h
+/Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/apps/cached_calculator.h
 

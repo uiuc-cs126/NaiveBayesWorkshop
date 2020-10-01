@@ -22,8 +22,8 @@ TEST_CASE("Testing Simple Valid Inputs", "[valid-expressions]") {
     }
     SECTION("Parsing subtraction and computing correctly", "[subtraction]") {
         SECTION("Simple Subtraction Problem", "[single-digit]") {
-            Expression exp("1 - 1");
-            REQUIRE(exp.ComputeSolution() == 0);
+            Expression exp("9 - 8");
+            REQUIRE(exp.ComputeSolution() == 1);
         }
         SECTION("Complex Subtraction Problem", "[multi-digit]") {
             Expression exp("830 - 230");
@@ -51,11 +51,11 @@ TEST_CASE("Testing Simple Valid Inputs", "[valid-expressions]") {
         }
         SECTION("Catches Divide by 0", "[single-digit][invalid-syntax]") {
             Expression exp("7 / 0");
-            CHECK_THROWS_AS(exp.ComputeSolution(), std::runtime_error);
+            REQUIRE_THROWS_AS(exp.ComputeSolution(), std::runtime_error);
         }
     }
     SECTION("Parsing no operation expressions correctly", "[no-operation][constants]") {
-        SECTION("Simple No Operation", "[single-digit]") {
+        SECTION("Simple No Operation", "[multi-digit]") {
             Expression exp("10");
             REQUIRE(exp.ComputeSolution() == 10);
         }
@@ -92,19 +92,19 @@ TEST_CASE("Testing Simple Valid Inputs", "[valid-expressions]") {
 
 TEST_CASE("Testing Invalid Inputs", "[invalid-syntax]") {
     SECTION("Operation Followed By No Number") {
-        CHECK_THROWS_AS(Expression("12 -"), std::runtime_error);
+        REQUIRE_THROWS_AS(Expression("12 -"), std::runtime_error);
     }
     SECTION("Multiple Consecutive Operators") {
-        CHECK_THROWS_AS(Expression("12 + * 13"), std::runtime_error);
+        REQUIRE_THROWS_AS(Expression("12 + * 13"), std::runtime_error);
     }
     SECTION("Non-numeric Characters") {
-        CHECK_THROWS_AS(Expression("12 - abd"), std::runtime_error);
+        REQUIRE_THROWS_AS(Expression("12 - abd"), std::runtime_error);
     }
     SECTION("Valid syntax but multiple operations", "[multi-operation]") {
-        CHECK_THROWS_AS(Expression("5 * 10 * 2"), std::runtime_error);
+        REQUIRE_THROWS_AS(Expression("5 * 10 * 2"), std::runtime_error);
     }
     SECTION("Negated number without operation") {
-        CHECK_THROWS_AS(Expression("-10"), std::runtime_error);
+        REQUIRE_THROWS_AS(Expression("-10"), std::runtime_error);
     }
 }
 

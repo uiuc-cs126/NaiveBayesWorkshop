@@ -6,6 +6,7 @@
 
 // String stream so we can test istream and ostream
 #include <sstream>
+#include <fstream>
 
 // Files to test
 #include "../interface/cached_calculator.h"
@@ -63,4 +64,22 @@ TEST_CASE("Calculator takes in expressions and stores them", "[istream]") {
 
     REQUIRE(calculator.GetCachedSolutions() == expected_cache);
   }
+}
+
+TEST_CASE("Cached Calculator takes in input from a text file", "[multi-input][istream]") {
+  std::ifstream expressionInput("../tests/test-expression-input.txt");
+  math::CachedCalculator calculator;
+  cached_solutions_t expected_cache;
+  // Create the expected cached Solutions 
+  expected_cache.insert(std::make_pair(math::Expression("1 + 1"), 2));
+  expected_cache.insert(std::make_pair(math::Expression("4 + 5"), 9));
+  expected_cache.insert(std::make_pair(math::Expression("1 * 5"), 5));
+  expected_cache.insert(std::make_pair(math::Expression("4 * 2"), 8));
+  expected_cache.insert(std::make_pair(math::Expression("10 - 8"), 2));
+  expected_cache.insert(std::make_pair(math::Expression("15 - 15"), 0));
+  expected_cache.insert(std::make_pair(math::Expression("10 / 2"), 5));
+
+  expressionInput >> calculator; // Using istream with a input file stream
+
+  REQUIRE(calculator.GetCachedSolutions() == expected_cache);
 }
