@@ -7,6 +7,7 @@
 // String stream so we can test istream and ostream
 #include <sstream>
 #include <fstream>
+#include <iostream>
 
 // Files to test
 #include "../interface/cached_calculator.h"
@@ -81,5 +82,6 @@ TEST_CASE("Cached Calculator takes in input from a text file", "[multi-input][is
 
   expressionInput >> calculator; // Using istream with a input file stream
 
+  std::cout << calculator << std::endl;
   REQUIRE(calculator.GetCachedSolutions() == expected_cache);
 }

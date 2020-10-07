@@ -25,27 +25,51 @@ const char kEChar = 'e';
 const double kPiVal = 3.14;
 const double kEVal = 2.72;
 
+const size_t kConstantStrLen = 2;
+
 class Expression {
   friend class ExpressionHasher;
 
   public:
+    //===================
+    // Constructors 
+    //===================
     Expression() = default;
     Expression(const std::string& input);
 
     double ComputeSolution() const;
 
-    // == Operator overload for hashing collisions
+    /**
+     * Operator overload for == used in the hashing operation. 
+     */
     bool operator==(const Expression& rhs) const;
 
-    // Input and Output stream operator overloads
+    /**
+     * Operator overload for << (ostream). Declared as friend to the Expression class 
+     * to access data members. 
+     */
     friend std::ostream& operator<<(std::ostream& os, const Expression& expression);
+
+    /**
+     * Opeartor overload for >> (ostream). Declared as friend to the Expression class 
+     * to access data members. 
+     */
     friend std::istream& operator>>(std::istream& is, Expression& expresson);
 
   private:
     //==============
     // Helping Functions
     //==============
+    /**
+     * Takes the raw input and checks for errors while also filling in the data members 
+     * for the operator and lhs and rhs numbers. 
+     */
     void ParseRawInput(const std::string& input);
+
+    /**
+     * Takes a string containing only a number and checks for correctness and returns 
+     * the number contained in the string. It will also check to see if a constant was called.
+     */ 
     double ParseNumber(std::string num_str);
 
     //==============

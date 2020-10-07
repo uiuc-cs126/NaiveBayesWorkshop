@@ -37,7 +37,7 @@ bool Expression::operator==(const Expression& rhs) const {
 }
 
 std::ostream& operator<<(std::ostream& os, const Expression& expression) {
-  if(expression.operator_ == kNoOperation) {
+  if (expression.operator_ == kNoOperation) {
     return os << expression.lhs_number_;
   }
   return os << expression.lhs_number_ << " " << expression.operator_ << " " << expression.rhs_number_;
@@ -65,11 +65,10 @@ void Expression::ParseRawInput(const std::string& input) {
     input_copy = input_copy.substr(search_results.position(search_results.size() - 1) + 1);
   }
 
-  if(operator_indices.size() == 0) { // Operator not found
+  if (operator_indices.size() == 0) { // Operator not found
     operator_ = Operation::kNoOperation;
     lhs_number_ = ParseNumber(input);
-  }
-  else if(operator_indices.size() == 1) { // Found one operator
+  } else if (operator_indices.size() == 1) { // Found one operator
     // Get operator, then parse into numbers the two substrings
     operator_ = static_cast<Operation>(input[operator_indices[0]]);
     lhs_number_ = ParseNumber(input.substr(0, operator_indices[0]));
@@ -79,8 +78,7 @@ void Expression::ParseRawInput(const std::string& input) {
       throw std::runtime_error("Invalid Syntax!");
     }
     rhs_number_ = ParseNumber(input.substr(operator_indices[0] + 1, input.size()));
-  }
-  else {
+  } else {
     throw std::runtime_error("Sorry, only one operator is allowed!");
   }
 }
@@ -91,12 +89,11 @@ double Expression::ParseNumber(std::string num_str) {
 
   // Check for constants
   size_t special_char_search = num_str.find(kSpecialCharacterDelim);
-  if(special_char_search == 0) {
+  if (special_char_search == 0) {
     if(num_str[1] == kPiChar) {
-      return num_str.size() == 2 ? kPiVal : throw std::runtime_error("Invalid Syntax!");
-    }
-    else if(num_str[1] == kEChar) {
-      return num_str.size() == 2 ? kEVal : throw std::runtime_error("Invalid Syntax!");
+      return num_str.size() == kConstantStrLen ? kPiVal : throw std::runtime_error("Invalid Syntax!");
+    } else if (num_str[1] == kEChar) {
+      return num_str.size() == kConstantStrLen ? kEVal : throw std::runtime_error("Invalid Syntax!");
     }
   }
 
@@ -104,7 +101,7 @@ double Expression::ParseNumber(std::string num_str) {
   std::regex numbers_neg_regex("[^0-9]");
   std::smatch search_results;
   std::regex_search(num_str, search_results, numbers_neg_regex);
-  if(search_results.size() != 0 || num_str.size() == 0) { // If we have an empty string or regex match
+  if (search_results.size() != 0 || num_str.size() == 0) { // If we have an empty string or regex match
     throw std::runtime_error("Invalid Syntax!");
   }
 

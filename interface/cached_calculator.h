@@ -30,12 +30,16 @@ class CachedCalculator {
     friend std::istream& operator>>(std::istream& is, CachedCalculator& calculator);
 
     // For testing purposes
-    std::unordered_map<Expression, double, ExpressionHasher> GetCachedSolutions() { return cached_solutions_; }
+    inline std::unordered_map<Expression, double, ExpressionHasher> GetCachedSolutions() const { return cached_solutions_; }
 
   private:
     //==============
     // Helper Funcs
     //==============
+    /**
+     * Stores the expression in the cached_solutions_ if the expression does not already exist,
+     * otherwise we do nothing. 
+     */ 
     void StoreSolution(const Expression& exp);
 
     //=========

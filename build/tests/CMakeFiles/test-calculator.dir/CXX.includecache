@@ -51,6 +51,8 @@ sstream
 -
 fstream
 -
+iostream
+-
 ../interface/cached_calculator.h
 /Users/Mr.Awesome/Desktop/CS_126_Work/OtherWork/NaiveBayesWorkshop/interface/cached_calculator.h
 ../interface/expression.h
